@@ -1,10 +1,11 @@
 <template>
-  <router-view></router-view>
+  bb
 </template>
 
 <script setup>
 
-</script>
+</script >
 
 <style>
+
 </style>
