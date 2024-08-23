@@ -1,14 +1,18 @@
-export default {
-    namespaced: true,
-    state: {
-        user: null, // 저장할 state작성
+import { createStore } from 'vuex'
+
+
+const store = createStore({
+    state() {
+        return {
+            user: null, // 저장할 state작성
+        }
     },
 
     //계산, 필터링 및 가공된 값을 반환
     getters: {
         // 사용자 ID
         user: (state) => {
-            return state.users.filter(user => 'id');
+            return state.user.filter(user => 'id');
         },
     },
 
@@ -37,4 +41,6 @@ export default {
             commit('setState', state);
         },
     },
-};
+})
+
+export default store;

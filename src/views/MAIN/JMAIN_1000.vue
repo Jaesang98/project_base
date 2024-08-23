@@ -1,12 +1,10 @@
 <template>
-  <button @click="$router.push('/JMAIN_1100')">버튼</button>
+  bb
 </template>
 
-<script>
-export default {
+<script setup>
 
-}
-</script>
+</script >
 
 <style>
 

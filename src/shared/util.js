@@ -1,5 +1,3 @@
-import { reactive } from "vue";
-import { RouteParamsRaw } from "vue-router";
 import router from "@/router";
 
 export {
@@ -9,11 +7,11 @@ export {
 
 
 // 화면열기
-const pageOpen = function(name:string, params?:RouteParamsRaw | Obj, useState?: boolean) {
+const pageOpen = function(name, params, useState) {
 	if(router.hasRoute(name)) {
 		if(params) {
 			const store = useStore();
-			store.$patch({ pageParam: params as Obj})
+			store.$patch({ pageParam: params})
 		}
 		if(useState) {
 			router.push({name, state : params});
