@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 //라우터들 임포트
-import HOMERouter from '@/router/routes/HOMERouter';
+import AllRouter from '@/router/routes/AllRouter';
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
@@ -13,7 +13,7 @@ const router = createRouter({
         },
 
         // Sample
-        ...HOMERouter,
+        ...AllRouter,
 
         // 404 Path 처리
         {

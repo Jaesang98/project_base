@@ -13,12 +13,12 @@
       </thead>
       <tbody>
         <tr>
-          <td>화면1</td>
-          <td>screen001</td>
-          <td>첫 번째 화면 설명</td>
-          <td><a href="#">이동</a></td>
-          <td>2024-01-01</td>
-          <td>2024-10-01</td>
+          <td>헤더</td>
+          <td>headers</td>
+          <td>헤더의 대한 퍼블리싱 화면입니다</td>
+          <td><button @click="$router.push('headers')">페이지로 이동</button></td>
+          <td>2024-10-12</td>
+          <td>2024-10-12</td>
         </tr>
       </tbody>
     </table>
